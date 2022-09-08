@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"prog1\startup_stm32f103xb.o"
+"prog1\st7735.o"
+"prog1\main.o"
+"prog1\stm32f1xx_it.o"
+"prog1\stm32f1xx_hal_msp.o"
+"prog1\stm32f1xx_hal_gpio_ex.o"
+"prog1\stm32f1xx_hal_spi.o"
+"prog1\stm32f1xx_hal.o"
+"prog1\stm32f1xx_hal_rcc.o"
+"prog1\stm32f1xx_hal_rcc_ex.o"
+"prog1\stm32f1xx_hal_gpio.o"
+"prog1\stm32f1xx_hal_dma.o"
+"prog1\stm32f1xx_hal_cortex.o"
+"prog1\stm32f1xx_hal_pwr.o"
+"prog1\stm32f1xx_hal_flash.o"
+"prog1\stm32f1xx_hal_flash_ex.o"
+"prog1\stm32f1xx_hal_exti.o"
+"prog1\stm32f1xx_hal_tim.o"
+"prog1\stm32f1xx_hal_tim_ex.o"
+"prog1\system_stm32f1xx.o"
+--strict --scatter "Prog1\Prog1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Prog1.map" -o Prog1\Prog1.axf
